@@ -294,18 +294,19 @@ section {
 }
 
 .hero-image {
-    width: auto;  /* Image keeps its natural width */
-    height: auto; /* Image keeps its natural height */
     display: flex;
     justify-content: center;
     align-items: center;
+    width: auto;   /* Keep natural width */
+    height: auto;  /* Keep natural height */
+    max-width: 100%; /* Ensure responsiveness */
+    overflow: hidden; /* Prevents any unwanted stretching */
 }
 
 .hero-image img {
-    max-width: 100%; /* Ensures image is responsive */
+    max-width: 100%; /* Keeps image responsive */
     height: auto; /* Maintains aspect ratio */
 }
-
 
 .profile-placeholder {
     width: 300px;
