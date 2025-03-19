@@ -285,23 +285,33 @@ section {
     gap: var(--spacing-sm);
 }
 
-.hero-image {
+.hero-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;  /* Set a fixed width */
-    height: 200px; /* Make sure height and width are equal */
-    border-radius: 50%; /* Ensures a perfect circle */
-    overflow: hidden; /* Ensures image does not overflow */
-    border: 4px solid #ffcc00; /* Optional: Add a border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px; /* Adds space between text and image */
+}
+
+.hero-image {
+    width: 200px;  /* Fixed size */
+    height: 200px; /* Keep height same as width */
+    border-radius: 50%; /* Perfect circle */
+    overflow: hidden; /* Prevents distortion */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #ffcc00; /* Optional border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0; /* Prevents shrinking on smaller screens */
 }
 
 .hero-image img {
-    width: 100%; /* Makes sure image fills the circle */
-    height: 100%; /* Ensures the image fits */
-    object-fit: cover; /* Ensures the image is cropped inside the circle */
+    width: 100%;  /* Ensure it fills the container */
+    height: 100%;
+    object-fit: cover; /* Prevents stretching */
 }
+
 
 
 .profile-placeholder {
