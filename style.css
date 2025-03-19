@@ -304,8 +304,10 @@ section {
 }
 
 .hero-image img {
-    max-width: 100%; /* Keeps image responsive */
-    height: auto; /* Maintains aspect ratio */
+    width: 300px; /* Adjust as needed */
+    height: auto; /* Maintains original aspect ratio */
+    border-radius: 0; /* Ensures the image remains rectangular */
+    object-fit: cover; /* Ensures the image fills the space properly */
 }
 
 .profile-placeholder {
