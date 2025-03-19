@@ -3,62 +3,402 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoogaaruna Priya - Portfolio</title>
+    <title>Yoogaaruna Priya Palanisamy - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-        <h1>👋 Hi, I'm <span class="highlight">Yoogaaruna Priya</span></h1>
-        <p>Electrical & Electronics Engineer | AI & Embedded Systems Enthusiast</p>
-        <nav>
-            <ul>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#home">YP</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#extracurricular">Activities</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Electrical and Electronics Engineering student at Universiti Tenaga Nasional (UNITEN). Passionate about AI, automation, and embedded systems.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Brain Tumour Detection System</h3>
-            <p>Developed an AI-based tumor detection system using deep learning models.</p>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
-        <div class="project-card">
-            <h3>SCADA for Renewable Energy</h3>
-            <p>Designed a SCADA system for monitoring a 2MW solar-biomass hybrid power plant.</p>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Yoogaaruna Priya Palanisamy</h1>
+                <h2>Electrical and Electronics Engineering</h2>
+                <p>Building innovative solutions through hardware and software expertise</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Replace with your profile image -->
+                <div class="profile-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li>✔️ Python & Machine Learning</li>
-            <li>✔️ Embedded Systems & IoT</li>
-            <li>✔️ MATLAB & Simulink</li>
-            <li>✔️ Web Development</li>
-        </ul>
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Logical and perceptive Electrical and Electronics Engineering student at Universiti Tenaga Nasional with a strong passion for hardware and software solutions. Through academic and industry experience, I've developed expertise in automation, process control and instrumentation, AI, data analytics, machine learning and embedded systems.</p>
+                    <p>I'm adept at working in team environments, demonstrating leadership, attention to detail, and adaptability in complex engineering challenges. Currently seeking full-time opportunities starting in July 2025 to apply my technical expertise, problem-solving skills, and innovative thinking in engineering and technology-driven industries.</p>
+                </div>
+                <div class="about-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Kuala Lumpur, Malaysia</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>011-2325 9882</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>pyooga28@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-github"></i>
+                        <span><a href="https://github.com/yooga228" target="_blank">github.com/yooga228</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:pyooga28@gmail.com">pyooga28@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/yooga228">yooga228</a></p>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects & Experience</h2>
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="work">Work</button>
+                <button class="filter-btn" data-filter="academic">Academic</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="work">
+                    <div class="project-img">
+                        <img src="images/ai-annotation.jpg" alt="AI Annotation System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Automatic Data Annotation Web System</h3>
+                        <h4>Western Digital, Batu Kawan | July 2024 - September 2024</h4>
+                        <p>Designed and developed an automatic data annotation web system using transformer-based models like Grounding DINO and SAM2 for object detection and segmentation.</p>
+                        <div class="project-tags">
+                            <span>AI</span>
+                            <span>Computer Vision</span>
+                            <span>Web Development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="academic">
+                    <div class="project-img">
+                        <img src="images/brain-tumor.jpg" alt="Brain Tumor Detection">
+                    </div>
+                    <div class="project-info">
+                        <h3>Brain Tumour Detection System</h3>
+                        <h4>Final Year Project | September 2024 - June 2025</h4>
+                        <p>Researching and developing a tumor detection system using transfer learning with ResNet, Inception, and VGG as backbone architectures for improved medical image analysis.</p>
+                        <div class="project-tags">
+                            <span>Deep Learning</span>
+                            <span>Medical Imaging</span>
+                            <span>Transfer Learning</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="academic">
+                    <div class="project-img">
+                        <img src="images/scada.jpg" alt="SCADA System">
+                    </div>
+                    <div class="project-info">
+                        <h3>SCADA System for Hybrid Power Plant</h3>
+                        <h4>Integrated Design Project | September 2024</h4>
+                        <p>Designed a conceptual SCADA system for real-time monitoring and control of a 2MW solar biomass hybrid power plant with PLC-based automation, EMS and BMS in MATLAB.</p>
+                        <div class="project-tags">
+                            <span>SCADA</span>
+                            <span>Renewable Energy</span>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="academic">
+                    <div class="project-img">
+                        <img src="images/fall-detection.jpg" alt="Fall Detection">
+                    </div>
+                    <div class="project-info">
+                        <h3>AI-based Fall Detection System</h3>
+                        <h4>International AI Hackathon (Hack@10) | September 2023</h4>
+                        <p>Developed an AI-based fall detection model for monitoring the elderly at home using OpenCV and YOLOv8 framework.</p>
+                        <div class="project-tags">
+                            <span>Computer Vision</span>
+                            <span>YOLOv8</span>
+                            <span>OpenCV</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yooga228/Fall-AI" target="_blank"><i class="fab fa-github"></i> View Source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Yoogaaruna Priya. All rights reserved.</p>
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">AI & Machine Learning</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Computer Vision</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">IoT & Embedded Systems</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Automation & Control</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">CAD & Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Assembly</span>
+                        <span class="skill-tag">VHDL</span>
+                    </div>
+                    <h3>Software & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">Proteus</span>
+                        <span class="skill-tag">Quartus</span>
+                        <span class="skill-tag">PTC Creo</span>
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">MultiSim</span>
+                        <span class="skill-tag">LTSpice</span>
+                        <span class="skill-tag">Adobe Suite</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Flask API</span>
+                        <span class="skill-tag">MATLAB/Simulink</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">Team Collaboration</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Project Management</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Critical Thinking</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Adaptability</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-card">
+                <div class="education-logo">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="education-info">
+                    <h3>Bachelor's in Electrical and Electronics Engineering (Hons)</h3>
+                    <h4>University Tenaga Nasional (UNITEN)</h4>
+                    <p class="education-date">Expected Graduation: June 2025</p>
+                    <p class="education-gpa">CGPA: 3.95 / 4.00</p>
+                    <p>Currently in Year 4 of the program, specializing in automation, process control, instrumentation, and AI applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="extracurricular" class="extracurricular">
+        <div class="container">
+            <h2 class="section-title">Extracurricular Activities</h2>
+            <div class="activities-timeline">
+                <div class="activity-item">
+                    <div class="activity-date">February 2024</div>
+                    <div class="activity-content">
+                        <h3>Innovation & Exploration for Sustainability (INOVEX)</h3>
+                        <h4>Prototype Designer - James Dyson Foundation</h4>
+                        <p>Led groundbreaking initiative for hand paralysis rehabilitation and innovative writing aid solution. Designed components on PTC Creo to be easily 3D Printed using PLA materials.</p>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-date">September 2023</div>
+                    <div class="activity-content">
+                        <h3>International AI Hackathon (Hack@10)</h3>
+                        <h4>AI Model Developer</h4>
+                        <p>Developed an AI-based fall detection model for monitoring the elderly at home using OpenCV and the YOLOv8 framework.</p>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-date">September 2023</div>
+                    <div class="activity-content">
+                        <h3>International ACEIC 2023</h3>
+                        <h4>Arduino Programmer</h4>
+                        <p>Innovated a simulation-based Smart Traffic System aimed at enhancing safety for disabled pedestrians using Arduino on Proteus simulation software. Awarded Bronze Medal for the innovative idea and design.</p>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-date">January 2022 - December 2023</div>
+                    <div class="activity-content">
+                        <h3>Multimedia and Technical Bureau, Table Tennis Club</h3>
+                        <h4>Team Director</h4>
+                        <p>Produced promotional content for club activities and led the multimedia bureau overseeing project planning and execution, ensuring a high standard of innovation and excellence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>pyooga28@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>011-2325 9882</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Kuala Lumpur, Malaysia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p><a href="#" target="_blank">Connect with me</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Yoogaaruna Priya</h3>
+                    <p>Electrical and Electronics Engineer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/yooga228" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Yoogaaruna Priya Palanisamy. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
-
